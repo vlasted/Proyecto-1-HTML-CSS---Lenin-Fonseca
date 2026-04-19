@@ -273,3 +273,87 @@ footer {
 footer p + p {
   margin-top: 0.5rem;
 }
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  #hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  #hero h2 {
+    font-size: 2.3rem;
+  }
+
+  #portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  section {
+    width: min(92%, var(--container-width));
+    margin-bottom: 3rem;
+  }
+
+  nav {
+    padding: 1rem 0;
+  }
+
+  nav h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  #hero {
+    padding-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #about,
+  #contact,
+  #portfolio article {
+    padding: 1rem;
+  }
+
+  #portfolio article img {
+    height: 200px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  button {
+    align-self: stretch;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
